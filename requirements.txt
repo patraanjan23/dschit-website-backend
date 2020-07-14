@@ -1,0 +1,6 @@
+setuptools==40.3.0
+Flask
+Flask-Restful
+flask-cors
+firebase-admin
+gunicorn
