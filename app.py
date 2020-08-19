@@ -45,7 +45,7 @@ class RouteResource(Resource):
                 response = request.get_json()
                 # TODO add json validation using schema later
                 if 'id' in response.keys():
-                    doc_id = str(response.pop('id'))
+                    doc_id = str(response['id'])
                     doc = cols[colname].document(doc_id).get()
                     if 'modify' in response.keys() and response['modify'] or not doc.exists:
                         if 'modify' in response.keys():
